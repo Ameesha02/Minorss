@@ -4,17 +4,21 @@ import {FaBars} from 'react-icons/fa'
 import { useState } from 'react'
 import ProfileAvatar from './Avatar'
 import { useSelector } from 'react-redux'
+import logo from '../Logo.png'
+
 function NavbarLg({name}){
   return(
     <>
         <div className='w-full md:flex hidden justify-between shadow items-center py-3 lg:px-16 md:px-12 sm:px-8 px-2'>
             <Link to="/" className='flex items-center'>
-                <h1 className='font-bold text-xl font-mono'>Tiffin Wala</h1>
+              <img src={logo}></img>
+                {/* <h1 className='font-bold text-xl font-mono'></h1> */}
             </Link>
             <ul className='gap-4 flex items-center font-semibold '>
+            <li><Link to="/">Home</Link></li>
+
                 <li><Link to="/provider">Tiffin Providers</Link></li>
-                <li><Link to="/aboutus">About Us</Link></li>
-                <li><Link to="/contactus">Contact Us</Link></li>
+               
                 {name ?<ProfileAvatar name={name}/>:
                 <div className='flex items-center gap-2'>
                   <li className='border border-slate-900 text-slate-900 px-2 py-1'><Link to="/signin">Login</Link></li>

@@ -7,10 +7,7 @@ import DeliveryCard from './DeliveryCard';
 
 function FoodCarousel() {
     const items = [
-        {
-            image:"https://imgur.com/a/4TqhLnkhttps://imgur.com/i1RHm2C",
-            title:"Poha"
-        },
+       
         {
             image:"https://b.zmtcdn.com/data/o2_assets/fc641efbb73b10484257f295ef0b9b981634401116.png",
             title:"Sandwich"
@@ -38,7 +35,11 @@ function FoodCarousel() {
         {
             image:"https://b.zmtcdn.com/data/o2_assets/7b0966fb0ab1c60888a652b2eaf826da1632716547.png",
             title:"Salad"
-        },  
+        }, 
+        {
+            image:"https://static.vecteezy.com/system/resources/previews/035/243/098/non_2x/indian-spicy-and-crispy-popular-breakfast-poha-chivda-on-white-background-photo.jpg",
+            title:"Poha"
+        } 
     ]
     const slideConfig = {
         slidesPerView: 6,
@@ -67,7 +68,7 @@ function FoodCarousel() {
 
   return (
     <div>
-        <h5 className='font-semibold text-2xl py-2 lg:px-16 md:px-8 px-4'>Inspiration for your first order</h5>
+        <h5 className='font-semibold text-2xl px-3 py-2 lg:px-16 md:px-8 px-4'>Inspiration for your first order</h5>
             <div className='px-2.5 py-5 md:hidden flex items-center justify-center gap-2.5 flex-wrap'>
                 {items.map((item)=>(
                     <DeliveryCard {...item} key={item.title}></DeliveryCard>

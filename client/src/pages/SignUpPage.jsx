@@ -8,7 +8,7 @@ import { GrSecure } from 'react-icons/gr'
 import { FiUser, FiPhone } from 'react-icons/fi'
 import { signUp } from '../redux/user/user.action'
 import { clearError } from '../redux/user/user.reducer'
-import logo from '../components/TiffinWalaLogo.png'
+import logo from '../components/Logo.png'
 
 function SignUpPage() {
   const [name, setName] = useState("")
@@ -68,8 +68,8 @@ function SignUpPage() {
     <div>
       <div className='py-2 sm:px-8 px-2 shadow flex justify-between items-center'>
         <Link to="/" className='flex items-center'>
-          <img src={logo} className='h-8 object-contain' alt="" />
-          <h1 className='font-bold text-xl font-mono'>Tiffin Wala</h1>
+          <img src={logo} className='h-[70px] object-contain' alt="" />
+          {/* <h1 className='font-bold text-xl font-mono'>Tiffin Wala</h1> */}
         </Link>
         <Link to="/" className='flex items-center gap-2'>
           <BiArrowBack />
@@ -103,7 +103,7 @@ function SignUpPage() {
               </div>
               {!passwordMatch && <small className='text-red-600'>* Password does not match</small>}
             </div>
-            <div className={`bg-slate-800 text-white py-2 shadow rounded-full ${isSigning ? 'opacity-70 cursor-not-allowed' : ''}`}>
+            <div className={`bg-orange-500 text-white py-2 shadow rounded-full ${isSigning ? 'opacity-70 cursor-not-allowed' : ''}`}>
               <input type="submit" value={`${isSigning ? 'Signing...' : 'Sign Up'}`} className={`h-full w-full cursor-pointer ${isSigning ? 'opacity-70 cursor-not-allowed' : ''}`} />
             </div>
             <div className='text-slate-900 font-semibold text-center'>
