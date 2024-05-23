@@ -9,7 +9,8 @@ const Footer = () => {
             <div className="mx-auto container xl:px-20 lg:px-12 sm:px-6 px-4">
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 md:gap-8 gap-4">
                     <div className="flex flex-col flex-shrink-0">
-                        <div>ServEase</div>
+                    <div className="font-poppins font-extrabold text-3xl text-[#D7D7D7]">ServEase</div>
+
                         <p className="text-sm leading-none mt-4" style={{ color: '#FFFFFF' }}>Copyright © 2024 ServEase</p>
                         <p className="text-sm leading-none mt-4" style={{ color: '#FFFFFF' }}>All rights reserved</p>
                         <div className="flex items-center gap-x-4 mt-12">
