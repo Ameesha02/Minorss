@@ -68,7 +68,7 @@ function FoodCarousel() {
 
   return (
     <div>
-        <h5 className='font-semibold text-2xl px-3 py-2 lg:px-16 md:px-8 px-4'>Inspiration for your first order</h5>
+        <h5 className='font-semibold text-2xl px-3 py-2 lg:px-16 md:px-8 '>Inspiration for your first order</h5>
             <div className='px-2.5 py-5 md:hidden flex items-center justify-center gap-2.5 flex-wrap'>
                 {items.map((item)=>(
                     <DeliveryCard {...item} key={item.title}></DeliveryCard>
