@@ -14,7 +14,7 @@ function NavbarLg({ name }) {
           <img src={logo} className='h-[70px] object-contain' alt="" />
           {/* <h1 className='font-bold text-xl font-mono'>hello</h1> */}
         </Link>
-        <ul className='gap-4 flex items-center font-semibold '>
+        <ul className='gap-4 flex items-center font-semibold text-orange-600'>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/provider">Tiffin Providers</Link></li>
           {/* <li><Link to="/provider">Tiffin Providers</Link></li>

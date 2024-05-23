@@ -22,7 +22,7 @@ function HeroSlider() {
     },
   ]
   return (
-    <div className='px-2 py-2'>
+    <div className='px-2 py-2 bg-orange-500'>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
