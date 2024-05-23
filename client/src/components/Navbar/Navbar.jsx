@@ -9,7 +9,7 @@ import logo from '../Logo.png'
 function NavbarLg({ name }) {
   return (
     <>
-      <div className='w-full md:flex hidden justify-between shadow items-center py-3 lg:px-16 md:px-12 sm:px-8 px-2'>
+      <div className='w-full md:flex hidden justify-between shadow items-center py-3 lg:px-16 md:px-12 sm:px-8 px-2.5'>
         <Link to="/" className='flex gap-1.5 items-center'>
           <img src={logo} className='h-[70px] object-contain' alt="" />
           {/* <h1 className='font-bold text-xl font-mono'>hello</h1> */}
