@@ -6,7 +6,7 @@ const ContactUsPage = (() => {
     return (<>
         <Navbar/>
         <ContactUs />
-        <Footer className=""/>
+        <Footer/>
     </>);
         
 });

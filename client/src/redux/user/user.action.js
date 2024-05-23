@@ -7,7 +7,7 @@ export const login = (user) => async (dispatch) => {
     const config = { headers: { "Content-Type": "application/json" } };
     const userData = await axios({
       method: "POST",
-      url: "https://tiffin-managment.onrender.com/api/v1/user/login",
+      url: "http://localhost:4000/api/v1/user/login",
       data: user,
       config,
     });
@@ -45,6 +45,7 @@ export const signUp = (user) => async (dispatch) => {
     return dispatch(userFail(error.response.data.message));
   }
 };
+
 export const logout = () => async (dispatch) => {
   try {
     dispatch(userRequest());
@@ -55,6 +56,7 @@ export const logout = () => async (dispatch) => {
     return dispatch(userFail(error.response.data.message));
   }
 };
+
 export const getUserDetails = () => async (dispatch) => {
   try {
     dispatch(userRequest());

@@ -16,7 +16,7 @@ export const loginProvider = (provider) => async (dispatch) => {
     const config = { headers: { "Content-Type": "application/json" } };
     const providerData = await axios({
       method: "POST",
-      url: "https://tiffin-managment.onrender.com/api/v1/provider/login",
+      url: "http://localhost:4000/api/v1/provider/login",
       data: provider,
       config,
     });
@@ -40,7 +40,7 @@ export const providerRegister = (provider) => async (dispatch) => {
     dispatch(providerRequest());
     const providerData = await axios({
       method: "POST",
-      url: "https://tiffin-managment.onrender.com/api/v1/provider/register",
+      url: "http://localhost:4000/api/v1/provider/register",
       data: provider,
     });
     axios.defaults.headers.common[

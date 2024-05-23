@@ -6,8 +6,7 @@ const generateToken = (res, statusCode, user, isUser) => {
     try {
         let accessToken = '';
         let refreshToken = '';
-        // let text1 = '';
-        // let text2 = '';
+       
 
         if (isUser) {
             accessToken = jwt.sign({ id: user._id }, process.env.ACCESS_TOKEN_SECRET, {
